@@ -6,8 +6,8 @@ html, body {
 
 main {
     background-image: url("./assets/BackgroundRocks.jpg");
-    background-size: 110%;
-    background-position: 50% 5%;
+    background-size: 2150px;
+    background-position: 50% -5%;
     background-repeat: no-repeat;
 }
 
@@ -19,6 +19,23 @@ main section {
 
 main h1{
     margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 40%;
+    border: 1px solid whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+}
+
+.sidebar i {
+    color: white;
 }
 
 .header {
@@ -88,50 +105,73 @@ main h1{
     font-size: 4rem;
 }
 
-.home-container h1 {
-    padding-top: 100px;
-}
-
-.home-container p,
-.projects-container p {
+.home-container p {
     font-size: 1.5rem;
 }
 
 .my-name {
-    color: rgb(115, 221, 235);
+    color: rgb(40, 255, 219);
 }
 
 .projects-container {
-    height: 950px;
+    height:  900px;
     text-align: center;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
     border: 1px solid white;
-    width: 60%;
+    width: 50%;
     margin: auto;
-    padding-top: 60px;
-    background-color: rgba(39, 39, 39, 0.5);
+    padding: 30px 0;
+    background-color: rgba(39, 39, 39, 0.7);
+    min-width: 1000px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.projects-container h1 {
+    text-shadow: 0 0 5px rgb(83, 83, 83);
+}
+
+.projects-intro {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 1.15rem;
 }
 
 .project-links {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     
 }
 
 .project {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-.project img {
-    width: 400px;
+.project-description {
+    width: 55%;
     height: 200px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid whitesmoke;
 }
 
-.project-description {
-    width: 50%;
+.project-description a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    border: 1px solid whitesmoke;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: rgba(218, 218, 218, 0.9);
+    font-weight: 600;
+}
+
+.project-img {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
