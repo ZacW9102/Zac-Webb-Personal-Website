@@ -1,13 +1,13 @@
 html, body {
     margin: 0;
     scroll-behavior: smooth;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(20, 20, 20);
 }
 
 main {
     background-image: url("./assets/BackgroundRocks.jpg");
-    background-size: 2150px;
-    background-position: 50% -5%;
+    background-size: 2175px;
+    background-position: 50% -50px;
     background-repeat: no-repeat;
 }
 
@@ -29,9 +29,12 @@ main h1{
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 30px 25px;
+    width: 65px;
     background-color: rgb(34, 34, 34);
-    border-radius: 10px;
+    border-radius: 5px;
+    height: 180px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .sidebar i {
@@ -124,10 +127,12 @@ main h1{
     min-width: 1000px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     border-radius: 10px;
+
 }
 
 .projects-container h1 {
-    text-shadow: 0 0 5px rgb(83, 83, 83);
+    color: white;
+    text-shadow: 0 0 5px rgb(54, 54, 54);
 }
 
 .projects-intro {
@@ -158,14 +163,29 @@ main h1{
     border-bottom: 1px solid whitesmoke;
 }
 
-.project-description a {
+.project-description a,
+.about-container a  {
     text-decoration: none;
-    color: rgb(48, 48, 48);
+    color: rgb(240, 240, 240);
     border: 1px solid whitesmoke;
     padding: 5px 25px;
     border-radius: 5px;
-    background-color: rgba(218, 218, 218, 0.9);
+    background-color: rgba(44, 44, 44, 0.9);
     font-weight: 600;
+    transition: box-shadow 0.3s ease,
+                color 0.3s ease;
+}
+
+.project-description a:hover,
+.about-container a:hover,
+.sidebar i:hover {
+    box-shadow: 3px 3px 7px rgb(0, 0, 0);
+    color: rgb(40, 255, 219);
+    border-color: rgb(40, 255, 219);
+}
+
+.sidebar i {
+    transition: color 0.3s ease;
 }
 
 .project-img {
@@ -174,4 +194,96 @@ main h1{
     width: 300px;
     height: 200px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.about-container {
+    border-top: 45px solid rgb(15, 15, 15);
+    padding: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+}
+
+.about-description p{
+    line-height: 30px;
+    font-size: larger;
+}
+
+.about-description h1 {
+    border-bottom: 1px solid white;
+    width: 205px;
+    padding-bottom: 2px;
+}
+
+
+.about-me, 
+.certifications {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.certifications h1{
+    margin-bottom: 20px;
+}
+
+.certifications {
+    display: flex;
+    flex-direction: column;
+}
+
+.certifications a{
+    width: 400px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.about-certifications {
+    margin-bottom: 40px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 400px;
+}
+
+.skills p{
+    border: 1px solid whitesmoke;
+    margin-top: 0;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white;
+    flex-grow: 1;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-container {
+    height: 200px;
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    width: 200px;
+    margin: auto;
+}
+
+.contact-container p{
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.contact-container a{
+    color:rgb(40, 255, 219);
 }
