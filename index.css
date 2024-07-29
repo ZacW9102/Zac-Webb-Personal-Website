@@ -32,7 +32,7 @@ main h1{
     width: 65px;
     background-color: rgb(34, 34, 34);
     border-radius: 5px;
-    height: 180px;
+    height: 140px;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -184,6 +184,10 @@ main h1{
     border-color: rgb(40, 255, 219);
 }
 
+.projects-intro a {
+    color: whitesmoke;
+}
+
 .sidebar i {
     transition: color 0.3s ease;
 }
@@ -197,7 +201,7 @@ main h1{
 }
 
 .about-container {
-    border-top: 45px solid rgb(15, 15, 15);
+    border-top: 45px solid rgb(10, 10, 10);
     padding: 80px;
     display: flex;
     justify-content: space-evenly;
@@ -284,6 +288,19 @@ main h1{
     font-size: 1.2rem;
 }
 
-.contact-container a{
+.contact-container a,
+.contact-email{
     color:rgb(40, 255, 219);
+}
+
+.about-container h1,
+.contact-container h1 {
+    color: whitesmoke;
+}
+
+.copied-notification {
+    position: relative;
+    bottom: -25px;
+    right: 60px;
+    display: none;
 }
