@@ -304,3 +304,12 @@ main h1{
     right: 60px;
     display: none;
 }
+
+
+/*
+Media Queries
+*/
+
+@media (max-width: 600px) {
+    
+}
