@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     background-color: rgb(20, 20, 20);
+    overflow-x: hidden;
 }
 
 main {
@@ -311,5 +312,52 @@ Media Queries
 */
 
 @media (max-width: 600px) {
+    
+
+    .container {
+        width: 100vw;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        background-image: url("./assets/BackgroundRocks.jpg");
+        background-size: 1000px;
+        background-position: 50% 90px;
+        background-repeat: no-repeat;
+    }
+    
+    .header-me {
+        text-align: center;
+    }
+
+    .header {
+        overflow-x: hidden;
+        width: 100px;
+        max-width: 430px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    .header-links a {
+        display: none;
+    }
+
+    .home-container h1 {
+        font-size: 2rem;
+    }
+    
+    .home-container {
+        height: 350px;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .projects-container {
+        width: 50%;
+    }
+
     
 }
