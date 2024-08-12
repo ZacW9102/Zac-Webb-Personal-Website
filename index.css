@@ -1,3 +1,4 @@
+/* General Styles */
 html, body {
     margin: 0;
     scroll-behavior: smooth;
@@ -18,7 +19,7 @@ main section {
     font-family: "Montserrat", sans-serif;
 }
 
-main h1{
+main h1 {
     margin: 0;
 }
 
@@ -61,9 +62,9 @@ main h1{
     top: 5px;
 }
 
-.zac-img{
+.zac-img {
     border-radius: 50%;
-    border: 2px solid  whitesmoke;
+    border: 2px solid whitesmoke;
     width: 40px;
     height: 40px;
     margin-right: 15px;
@@ -118,7 +119,7 @@ main h1{
 }
 
 .projects-container {
-    height:  900px;
+    height: 900px;
     text-align: center;
     border: 1px solid white;
     width: 50%;
@@ -128,7 +129,6 @@ main h1{
     min-width: 1000px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     border-radius: 10px;
-
 }
 
 .projects-container h1 {
@@ -147,7 +147,6 @@ main h1{
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
-    
 }
 
 .project {
@@ -165,7 +164,7 @@ main h1{
 }
 
 .project-description a,
-.about-container a  {
+.about-container a {
     text-decoration: none;
     color: rgb(240, 240, 240);
     border: 1px solid whitesmoke;
@@ -213,7 +212,7 @@ main h1{
     font-size: 2.5rem;
 }
 
-.about-description p{
+.about-description p {
     line-height: 30px;
     font-size: larger;
 }
@@ -224,15 +223,14 @@ main h1{
     padding-bottom: 2px;
 }
 
-
-.about-me, 
+.about-me,
 .certifications {
     width: 35%;
     display: flex;
     flex-direction: column;
 }
 
-.certifications h1{
+.certifications h1 {
     margin-bottom: 20px;
 }
 
@@ -241,7 +239,7 @@ main h1{
     flex-direction: column;
 }
 
-.certifications a{
+.certifications a {
     width: 400px;
     text-align: center;
     font-size: 1.2rem;
@@ -258,7 +256,7 @@ main h1{
     width: 400px;
 }
 
-.skills p{
+.skills p {
     border: 1px solid whitesmoke;
     margin-top: 0;
     padding: 5px 10px;
@@ -284,14 +282,14 @@ main h1{
     margin: auto;
 }
 
-.contact-container p{
+.contact-container p {
     margin-top: 30px;
     font-size: 1.2rem;
 }
 
 .contact-container a,
-.contact-email{
-    color:rgb(40, 255, 219);
+.contact-email {
+    color: rgb(40, 255, 219);
 }
 
 .about-container h1,
@@ -306,14 +304,8 @@ main h1{
     display: none;
 }
 
-
-/*
-Media Queries
-*/
-
+/* Media Queries */
 @media (max-width: 600px) {
-    
-
     .container {
         width: 100vw;
         max-width: 100%;
@@ -340,7 +332,6 @@ Media Queries
         box-sizing: border-box;
     }
 
-
     .header-links a {
         display: none;
     }
@@ -356,8 +347,47 @@ Media Queries
     }
 
     .projects-container {
-        width: 50%;
+        width: 80%;
+        min-width: 100px;
+        padding: 15px 0;
     }
 
+    .projects-container h1{
+        font-size: 2.75rem;
+    }
     
+    .projects-container p {
+        font-size: 1rem;
+    }
+
+    .project-description a{
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
+        padding: 0;
+    }
+
+    .projects-intro {
+        width: 80%;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project-description {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .project-img {
+        width: 200px;
+        height: 125px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 }
