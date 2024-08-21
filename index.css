@@ -313,9 +313,9 @@ main h1 {
     }
 
     main {
-        background-image: url("./assets/BackgroundRocks.jpg");
+        background-image: none;
         background-size: 1000px;
-        background-position: 50% 90px;
+        background-position: 60% 90px;
         background-repeat: no-repeat;
     }
     
@@ -341,7 +341,7 @@ main h1 {
     }
     
     .home-container {
-        height: 350px;
+        height: auto;
         padding-top: 50px;
         text-align: center;
     }
@@ -350,6 +350,7 @@ main h1 {
         width: 80%;
         min-width: 100px;
         padding: 15px 0;
+        height: auto;
     }
 
     .projects-container h1{
@@ -403,7 +404,21 @@ main h1 {
         width: 100%;
     }
 
+    .certifications h1,
+    .about-description h1 {
+        font-size: 1.75rem;
+    }
+
     .about-certifications a {
         font-size: 0.9rem;
     }
+
+    .skills {
+        width: auto;
+    }
+
+    .contact-container {
+        padding: 25px;
+    }
+
 }
