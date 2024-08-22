@@ -317,6 +317,7 @@ main h1 {
         background-size: 1000px;
         background-position: 60% 90px;
         background-repeat: no-repeat;
+        background-color: rgb(17, 17, 17);
     }
     
     .header-me {
